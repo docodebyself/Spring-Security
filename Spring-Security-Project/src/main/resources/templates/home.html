@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+<p> Welcome to my page! </p>
+<a th:href="@{/admin/get}">For admin</a>
+<a th:href="@{/user/get}">For user</a>
+<a th:href= "@{/logout}">Logout</a>
+</body>
+</html>
