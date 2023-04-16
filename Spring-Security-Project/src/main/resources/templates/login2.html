@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "https://www.thymeleaf.org/">
+<head>
+    <link rel="stylesheet" th:href="@{/css/login2.css}" type="text/css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <form th:action="@{/sign-in}" method="post">
+        <div class="row">
+            <h2 style="text-align:center">Login Page</h2>
+            <div class="col">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="submit" value="Login">
+            </div>
+            <div class="col">
+                <a th:href="@{/oauth2/authorization/facebook}" class="fb btn"><i class="fa fa-facebook fa-fw"></i> Login with Facebook</a>
+                <a th:href="@{/oauth2/authorization/github}" class="twitter btn"><i class="fa fa-github fa-fw"></i> Login with GitHub</a>
+                <a th:href="@{/oauth2/authorization/google}" class="google btn"><i class="fa fa-google fa-fw"></i> Login with Google+</a>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

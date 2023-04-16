@@ -1,0 +1,31 @@
+server:
+  port: 8085
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring_security?createDatabaseIfNotExist=true&useSSL=true
+    username: root
+    password: selfcode81@
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 562873518516-j8tp1t97q7kl2vpv8a6b4uhlpct10jsr.apps.googleusercontent.com
+            client-secret: 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
+          github:
+            client-id: ed1e84c160343a83a2a2
+            client-secret: 6e53e64e329369566b499c8d32cdb80d5bc56cb2
+          facebook:
+            client-id: 557916549658500
+            client-secret: 8d691f230cd4dcaf02e6fa33bc149ec4

@@ -79,6 +79,10 @@ public class AppConfig {
                 .csrf().disable()
                 .authenticationManager(manager)
                 .httpBasic()
+                .and()
+                .oauth2Login()
+                .loginPage("/login")
+                .defaultSuccessUrl("/home/index", true)
         ;
 
         return http.build();

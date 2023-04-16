@@ -19,15 +19,15 @@
                     <input type="password" class="login__input" name="password" placeholder="Password">
                 </div>
                 <input type="submit" class="button login__submit">
-                    <span class="button__text">Log In</span>
-                    <i class="button__icon fas fa-chevron-right"></i>
+                <span class="button__text">Log In</span>
+                <i class="button__icon fas fa-chevron-right"></i>
                 </input>
             </form>
             <div class="social-login">
                 <div class="social-icons">
-                    <a href="#" class="social-login__icon fab fa-instagram">Google</a>
+                    <a th:href="@{/login/authorization/google}" class="social-login__icon fab fa-instagram">Google</a>
                     <a href="#" class="social-login__icon fab fa-facebook">Facebook</a>
-                    <a href="#" class="social-login__icon fab fa-twitter">Twitter</a>
+                    <a href="#" class="social-login__icon fab fa-twitter">GitHub</a>
                 </div>
             </div>
         </div>
